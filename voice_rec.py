@@ -62,57 +62,57 @@ with sr.Microphone() as source:
             engine.runAndWait()
             sendData("fourth")
 
-        elif text == "tell me a riddle":
-            if random == 1:
-                print("Only one color, but not one size, stuck at the bottom, yet easily flies; present in sun, but not in rain; doing no harm, and feeling no pain. What am I?")
+    #    elif text == "tell me a riddle":
+        #    if random == 1:
+            #    print("Only one color, but not one size, stuck at the bottom, yet easily flies; present in sun, but not in rain; doing no harm, and feeling no pain. What am I?")
 
-            elif random == 2:
-                print("Poor people have it. Rich people need it. If you eat it, you’ll get sick or maybe die. What is it?")
-            elif random == 3:
-                print("What word in the English language does the following: the first two letters signify a male, the first three letters signify a female, the first four letters signify a great, while the entire world signifies a great woman. What is the word?")
-            elif random == 4:
-                print("I have keys, but no locks and space, and no rooms. You can enter, but you can’t go outside. What am I?")
-            elif random == 5:
-                print("What are the next three letters in this combination? OTTFFSS ")
-            elif random == 6:
-                print ("What comes once in a minute, twice in a moment, but never in a thousand years?")
-            elif random == 7:
-                print("You can carry it everywhere you go, and it does not get heavy. What is it?")
+        #    elif random == 2:
+        #        print("Poor people have it. Rich people need it. If you eat it, you’ll get sick or maybe die. What is it?")
+        #    elif random == 3:
+        #        print("What word in the English language does the following: the first two letters signify a male, the first three letters signify a female, the first four letters signify a great, while the entire world signifies a great woman. What is the word?")
+        #    elif random == 4:
+        #        print("I have keys, but no locks and space, and no rooms. You can enter, but you can’t go outside. What am I?")
+        #    elif random == 5:
+        #        print("What are the next three letters in this combination? OTTFFSS ")
+        #    elif random == 6:
+        #        print ("What comes once in a minute, twice in a moment, but never in a thousand years?")
+        #    elif random == 7:
+        #        print("You can carry it everywhere you go, and it does not get heavy. What is it?")
 
-        elif text == "tell me a joke":
-            print("this works")
-            if random == 1:
-                print(joke1)
-                engine.say(joke1)
-                engine.runAndWait()
-            elif random == 2:
-                print(joke2)
-                engine.say(joke2)
-                engine.runAndWait()
-            elif random == 3:
-                print(joke3)
-                engine.say(joke3)
-                engine.runAndWait()
-            elif random == 4:
-                print(joke4)
-                engine.say(joke4)
-                engine.runAndWait()
-            elif random == 5:
-                print(joke5)
-                engine.say(joke5)
-                engine.runAndWait()
-            elif random == 6:
-                    print(joke6)
-                    engine.say(joke6)
-                    engine.runAndWait()
-            elif random == 7:
-                print(joke7)
-                engine.say(joke7)
-                engine.runAndWait()
-            elif random == 8:
-                print(joke8)
-                engine.say(joke8)
-                engine.runAndWait()
+    #    elif text == "tell me a joke":
+    #        print("this works")
+    #        if random == 1:
+    #            print(joke1)
+        #        engine.say(joke1)
+        #        engine.runAndWait()
+    #        elif random == 2:
+    #            print(joke2)
+    #            engine.say(joke2)
+    #            engine.runAndWait()
+    #        elif random == 3:
+    #            print(joke3)
+            #    engine.say(joke3)
+        #        engine.runAndWait()
+        #    elif random == 4:
+        #        print(joke4)
+            #    engine.say(joke4)
+        #        engine.runAndWait()
+    #        elif random == 5:
+        #        print(joke5)
+        #        engine.say(joke5)
+        #        engine.runAndWait()
+        #    elif random == 6:
+        #            print(joke6)
+        #            engine.say(joke6)
+        #            engine.runAndWait()
+        #    elif random == 7:
+        #        print(joke7)
+        #        engine.say(joke7)
+        #        engine.runAndWait()
+        #    elif random == 8:
+        #        print(joke8)
+        #        engine.say(joke8)
+        #        engine.runAndWait()
 
         else:
             engine.say("Invalid Floor. Try Again")
