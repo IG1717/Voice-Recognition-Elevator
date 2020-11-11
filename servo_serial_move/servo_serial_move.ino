@@ -5,10 +5,15 @@ Servo servo_test;
 int angle = 0;
 int incomingByte = 0;
 
+char serialData;
+int pin=13;
+
 void setup()
 {
   servo_test.attach(9);
   Serial.begin(9600);
+
+  pinMode(pin, OUTPUT);
 }
 void loop()
 {
@@ -16,10 +21,15 @@ void loop()
 
    if (Serial.available() > 0) {
                 // read the incoming byte:
-                incomingByte = Serial.read();
+                if(Serial.available() > 0) {
+                  serialData = Serial.read();
+                  Serial.print(serialData);
+                }
 
-                // say what you got:
-                Serial.print("I received: ");
-                Serial.println(incomingByte, DEC);
+                if (serialData == '1') {
+                  digitalWrite(pin, HIGH);}
+                else if(serialData == '0') {
+                  digitalWrite(pin, LOW);
+                }
         }
 }
