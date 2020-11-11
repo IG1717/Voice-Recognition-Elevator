@@ -17,6 +17,6 @@ pip3 install PySerial
 ```
 
 
-## License
-Created by SAR High School Engineering Club
-[MIT](https://choosealicense.com/licenses/mit/)
+## Credits
+Created by [SAR High School Engineering Club](https://www.saracademy.org/)
+
