@@ -1,7 +1,8 @@
 #include <Servo.h>
 
-Servo servo_test;
+int servoPin = 3;
 
+Servo Servo1;
 int angle = 0;
 int incomingByte = 0;
 
@@ -10,7 +11,7 @@ int pin=13;
 
 void setup()
 {
-  servo_test.attach(9);
+  Servo1.attach(3);
   Serial.begin(9600);
 
   pinMode(pin, OUTPUT);
@@ -27,9 +28,15 @@ void loop()
                 }
 
                 if (serialData == '1') {
-                  digitalWrite(pin, HIGH);}
+                  // Make servo go to 90 degrees
+                    Servo1.write(90);
+                    delay(1000);
+                    Servo1.write(0);
+                    delay(1000);
+                    Serial.write("Terminate");
+                    }
                 else if(serialData == '0') {
-                  digitalWrite(pin, LOW);
+
                 }
         }
 }

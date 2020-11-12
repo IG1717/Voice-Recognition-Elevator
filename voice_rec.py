@@ -21,11 +21,11 @@ joke7 = "Did you hear about the mathematician who’s afraid of negative numbers
 
 def sendData(floor):
     print("func called")
-    with serial.Serial('/dev/cu.usbmodem14101', 9600) as ser:
+    with serial.Serial('/dev/cu.usbmodem14301', 9600) as ser:
         x = ser.readline()
         print(x)
 
-        ser.write(floor.encode())
+        ser.write('1'.encode())
 
         y = ser.readline()
         print(y)
